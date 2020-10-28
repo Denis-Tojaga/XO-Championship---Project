@@ -1,0 +1,12 @@
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\bin\Debug\XO_Game_Project.exe.config
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\bin\Debug\XO_Game_Project.exe
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\bin\Debug\XO_Game_Project.pdb
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.csprojAssemblyReference.cache
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.frmStart.resources
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.Properties.Resources.resources
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.csproj.GenerateResource.cache
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.csproj.CoreCompileInputs.cache
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.exe
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.pdb
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.frmRegistracija.resources
+C:\Users\Denis\source\repos\XO_Game_Project\XO_Game_Project\obj\Debug\XO_Game_Project.frmGame.resources
