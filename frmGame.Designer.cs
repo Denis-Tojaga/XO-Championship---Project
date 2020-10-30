@@ -57,7 +57,6 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(130, 116);
             this.btn1.TabIndex = 0;
-            this.btn1.Text = "Nesto";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
@@ -71,7 +70,6 @@
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(124, 116);
             this.btn2.TabIndex = 1;
-            this.btn2.Text = "Click to play";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
@@ -84,7 +82,6 @@
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(121, 116);
             this.btn3.TabIndex = 2;
-            this.btn3.Text = "Click to play";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
@@ -97,7 +94,6 @@
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(130, 121);
             this.btn4.TabIndex = 5;
-            this.btn4.Text = "Click to play";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
@@ -110,7 +106,6 @@
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(124, 121);
             this.btn5.TabIndex = 4;
-            this.btn5.Text = "Click to play";
             this.btn5.UseVisualStyleBackColor = true;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
@@ -123,7 +118,6 @@
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(121, 121);
             this.btn6.TabIndex = 3;
-            this.btn6.Text = "Click to play";
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
@@ -136,7 +130,6 @@
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(130, 118);
             this.btn7.TabIndex = 8;
-            this.btn7.Text = "Click to play";
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
@@ -149,7 +142,6 @@
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(124, 118);
             this.btn8.TabIndex = 7;
-            this.btn8.Text = "Click to play";
             this.btn8.UseVisualStyleBackColor = true;
             this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
@@ -162,7 +154,6 @@
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(121, 118);
             this.btn9.TabIndex = 6;
-            this.btn9.Text = "Click to play";
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
@@ -220,14 +211,15 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(418, 50);
+            this.label4.Location = new System.Drawing.Point(414, 102);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(6, 133);
+            this.label4.Size = new System.Drawing.Size(10, 85);
             this.label4.TabIndex = 14;
             // 
             // lblIgrac2
             // 
             this.lblIgrac2.AutoSize = true;
+            this.lblIgrac2.BackColor = System.Drawing.Color.Transparent;
             this.lblIgrac2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIgrac2.Location = new System.Drawing.Point(493, 67);
             this.lblIgrac2.Name = "lblIgrac2";
@@ -237,7 +229,9 @@
             // lblPrviIgrac
             // 
             this.lblPrviIgrac.AutoSize = true;
+            this.lblPrviIgrac.BackColor = System.Drawing.Color.Transparent;
             this.lblPrviIgrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrviIgrac.ForeColor = System.Drawing.Color.White;
             this.lblPrviIgrac.Location = new System.Drawing.Point(294, 50);
             this.lblPrviIgrac.Name = "lblPrviIgrac";
             this.lblPrviIgrac.Size = new System.Drawing.Size(0, 29);
@@ -246,7 +240,9 @@
             // lblDrugiIgrac
             // 
             this.lblDrugiIgrac.AutoSize = true;
+            this.lblDrugiIgrac.BackColor = System.Drawing.Color.Transparent;
             this.lblDrugiIgrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDrugiIgrac.ForeColor = System.Drawing.Color.White;
             this.lblDrugiIgrac.Location = new System.Drawing.Point(476, 50);
             this.lblDrugiIgrac.Name = "lblDrugiIgrac";
             this.lblDrugiIgrac.Size = new System.Drawing.Size(0, 29);
@@ -267,7 +263,7 @@
             this.lblRezultatIgraca1.BackColor = System.Drawing.Color.Transparent;
             this.lblRezultatIgraca1.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRezultatIgraca1.ForeColor = System.Drawing.Color.White;
-            this.lblRezultatIgraca1.Location = new System.Drawing.Point(312, 67);
+            this.lblRezultatIgraca1.Location = new System.Drawing.Point(315, 79);
             this.lblRezultatIgraca1.Name = "lblRezultatIgraca1";
             this.lblRezultatIgraca1.Size = new System.Drawing.Size(97, 104);
             this.lblRezultatIgraca1.TabIndex = 19;
@@ -279,7 +275,7 @@
             this.lblRezultatIgraca2.BackColor = System.Drawing.Color.Transparent;
             this.lblRezultatIgraca2.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRezultatIgraca2.ForeColor = System.Drawing.Color.White;
-            this.lblRezultatIgraca2.Location = new System.Drawing.Point(439, 67);
+            this.lblRezultatIgraca2.Location = new System.Drawing.Point(439, 79);
             this.lblRezultatIgraca2.Name = "lblRezultatIgraca2";
             this.lblRezultatIgraca2.Size = new System.Drawing.Size(97, 104);
             this.lblRezultatIgraca2.TabIndex = 20;

@@ -33,7 +33,7 @@ namespace XO_Game_Project
         }
         private bool ProvjeriDugmice(Button button1, Button button2, Button button3)
         {
-            if (button1.Text!="Click to play" && button1.Text == button2.Text && button1.Text == button3.Text)
+            if (button1.Text!="" && button1.Text == button2.Text && button1.Text == button3.Text)
             {
                 button1.BackColor = Color.Red;
                 button2.BackColor = Color.Red;
@@ -57,8 +57,9 @@ namespace XO_Game_Project
         {
             int newButtonTextSize = 50;
             Button kliknutiDugmic = kliknut as Button;
-            if (kliknutiDugmic.Text == "Click to play")
+            if (string.IsNullOrEmpty(kliknutiDugmic.Text))
             {
+                // kliknutiDugmic.Text == "Click to play"
                 if (BrojacPoteza % 2 == 0)
                 {
                     kliknutiDugmic.Text = "X";
