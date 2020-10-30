@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+/// <summary>
+/// hala oplakat ces
+/// </summary>
+
+
 namespace XO_Game_Project
 {
     public partial class frmGame : Form
