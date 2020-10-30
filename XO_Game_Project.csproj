@@ -64,6 +64,7 @@
     <Compile Include="frmStart.Designer.cs">
       <DependentUpon>frmStart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Igrac.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGame.resx">
@@ -100,6 +101,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="formBackground.jpg" />
+    <Content Include="gameBackground.jpg" />
+    <None Include="Resources\gameBackground.jpg" />
     <None Include="Resources\formBackground.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

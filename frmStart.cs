@@ -29,6 +29,12 @@ namespace XO_Game_Project
         }
         private void btnStart_Click(object sender, EventArgs e)
         {
+            if(lbl2Igraca.BackColor!=Color.Red && lbl4Igraca.BackColor != Color.Red && lbl8Igraca.BackColor != Color.Red)
+            {
+                MessageBox.Show("Please select how many players You want!");
+                return;
+            }
+            Hide();
             frmRegistracija formaReg = new frmRegistracija(BrojIgracaUIgrici);
             formaReg.ShowDialog();
             Close();
@@ -54,7 +60,6 @@ namespace XO_Game_Project
             lbl8Igraca.BackColor = Color.Red;
             BrojIgracaUIgrici = 8;
         }
-
        
     }
 }

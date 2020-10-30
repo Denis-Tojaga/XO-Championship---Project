@@ -104,6 +104,7 @@
             // 
             this.lbl2Igraca.AutoSize = true;
             this.lbl2Igraca.BackColor = System.Drawing.Color.White;
+            this.lbl2Igraca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl2Igraca.Font = new System.Drawing.Font("Orbitron", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl2Igraca.Location = new System.Drawing.Point(384, 136);
             this.lbl2Igraca.Name = "lbl2Igraca";
@@ -116,6 +117,7 @@
             // 
             this.lbl4Igraca.AutoSize = true;
             this.lbl4Igraca.BackColor = System.Drawing.Color.White;
+            this.lbl4Igraca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl4Igraca.Font = new System.Drawing.Font("Orbitron", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl4Igraca.Location = new System.Drawing.Point(420, 136);
             this.lbl4Igraca.Name = "lbl4Igraca";
@@ -128,6 +130,7 @@
             // 
             this.lbl8Igraca.AutoSize = true;
             this.lbl8Igraca.BackColor = System.Drawing.Color.White;
+            this.lbl8Igraca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl8Igraca.Font = new System.Drawing.Font("Orbitron", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl8Igraca.Location = new System.Drawing.Point(454, 136);
             this.lbl8Igraca.Name = "lbl8Igraca";
