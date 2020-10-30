@@ -57,7 +57,7 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(130, 116);
             this.btn1.TabIndex = 0;
-            this.btn1.Text = "Click to play";
+            this.btn1.Text = "Nesto";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
@@ -66,7 +66,7 @@
             this.btn2.FlatAppearance.BorderSize = 3;
             this.btn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MistyRose;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn2.Font = new System.Drawing.Font("Orbitron", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(362, 211);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(124, 116);
@@ -170,56 +170,56 @@
             // 
             this.lblCurrently.AutoSize = true;
             this.lblCurrently.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrently.Font = new System.Drawing.Font("Orbitron", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
+            this.lblCurrently.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
             this.lblCurrently.ForeColor = System.Drawing.Color.White;
             this.lblCurrently.Location = new System.Drawing.Point(148, 597);
             this.lblCurrently.Name = "lblCurrently";
-            this.lblCurrently.Size = new System.Drawing.Size(276, 29);
+            this.lblCurrently.Size = new System.Drawing.Size(302, 36);
             this.lblCurrently.TabIndex = 9;
             this.lblCurrently.Text = "Currently playing >>";
             // 
             // lblTrenutniPotez
             // 
             this.lblTrenutniPotez.AutoSize = true;
-            this.lblTrenutniPotez.Font = new System.Drawing.Font("Orbitron", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrenutniPotez.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrenutniPotez.Location = new System.Drawing.Point(424, 594);
             this.lblTrenutniPotez.Name = "lblTrenutniPotez";
-            this.lblTrenutniPotez.Size = new System.Drawing.Size(0, 32);
+            this.lblTrenutniPotez.Size = new System.Drawing.Size(0, 39);
             this.lblTrenutniPotez.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Orbitron", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(333, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 24);
+            this.label2.Size = new System.Drawing.Size(139, 29);
             this.label2.TabIndex = 11;
             this.label2.Text = "Result  >>";
             // 
             // lblIgrac1
             // 
             this.lblIgrac1.AutoSize = true;
-            this.lblIgrac1.Font = new System.Drawing.Font("Orbitron", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIgrac1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIgrac1.Location = new System.Drawing.Point(276, 67);
             this.lblIgrac1.Name = "lblIgrac1";
-            this.lblIgrac1.Size = new System.Drawing.Size(0, 20);
+            this.lblIgrac1.Size = new System.Drawing.Size(0, 25);
             this.lblIgrac1.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Orbitron", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(489, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 24);
+            this.label3.Size = new System.Drawing.Size(0, 29);
             this.label3.TabIndex = 13;
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Orbitron", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(418, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(6, 133);
@@ -228,48 +228,48 @@
             // lblIgrac2
             // 
             this.lblIgrac2.AutoSize = true;
-            this.lblIgrac2.Font = new System.Drawing.Font("Orbitron", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIgrac2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIgrac2.Location = new System.Drawing.Point(493, 67);
             this.lblIgrac2.Name = "lblIgrac2";
-            this.lblIgrac2.Size = new System.Drawing.Size(0, 24);
+            this.lblIgrac2.Size = new System.Drawing.Size(0, 29);
             this.lblIgrac2.TabIndex = 15;
             // 
             // lblPrviIgrac
             // 
             this.lblPrviIgrac.AutoSize = true;
-            this.lblPrviIgrac.Font = new System.Drawing.Font("Orbitron", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrviIgrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrviIgrac.Location = new System.Drawing.Point(294, 50);
             this.lblPrviIgrac.Name = "lblPrviIgrac";
-            this.lblPrviIgrac.Size = new System.Drawing.Size(0, 24);
+            this.lblPrviIgrac.Size = new System.Drawing.Size(0, 29);
             this.lblPrviIgrac.TabIndex = 16;
             // 
             // lblDrugiIgrac
             // 
             this.lblDrugiIgrac.AutoSize = true;
-            this.lblDrugiIgrac.Font = new System.Drawing.Font("Orbitron", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDrugiIgrac.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDrugiIgrac.Location = new System.Drawing.Point(476, 50);
             this.lblDrugiIgrac.Name = "lblDrugiIgrac";
-            this.lblDrugiIgrac.Size = new System.Drawing.Size(0, 24);
+            this.lblDrugiIgrac.Size = new System.Drawing.Size(0, 29);
             this.lblDrugiIgrac.TabIndex = 17;
             // 
             // lblPobjednik
             // 
             this.lblPobjednik.AutoSize = true;
-            this.lblPobjednik.Font = new System.Drawing.Font("Orbitron", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPobjednik.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPobjednik.Location = new System.Drawing.Point(476, 12);
             this.lblPobjednik.Name = "lblPobjednik";
-            this.lblPobjednik.Size = new System.Drawing.Size(0, 21);
+            this.lblPobjednik.Size = new System.Drawing.Size(0, 26);
             this.lblPobjednik.TabIndex = 18;
             // 
             // lblRezultatIgraca1
             // 
             this.lblRezultatIgraca1.AutoSize = true;
             this.lblRezultatIgraca1.BackColor = System.Drawing.Color.Transparent;
-            this.lblRezultatIgraca1.Font = new System.Drawing.Font("Orbitron", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRezultatIgraca1.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRezultatIgraca1.ForeColor = System.Drawing.Color.White;
             this.lblRezultatIgraca1.Location = new System.Drawing.Point(312, 67);
             this.lblRezultatIgraca1.Name = "lblRezultatIgraca1";
-            this.lblRezultatIgraca1.Size = new System.Drawing.Size(100, 89);
+            this.lblRezultatIgraca1.Size = new System.Drawing.Size(97, 104);
             this.lblRezultatIgraca1.TabIndex = 19;
             this.lblRezultatIgraca1.Text = "0";
             // 
@@ -277,17 +277,17 @@
             // 
             this.lblRezultatIgraca2.AutoSize = true;
             this.lblRezultatIgraca2.BackColor = System.Drawing.Color.Transparent;
-            this.lblRezultatIgraca2.Font = new System.Drawing.Font("Orbitron", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRezultatIgraca2.Font = new System.Drawing.Font("Microsoft Sans Serif", 55F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRezultatIgraca2.ForeColor = System.Drawing.Color.White;
             this.lblRezultatIgraca2.Location = new System.Drawing.Point(439, 67);
             this.lblRezultatIgraca2.Name = "lblRezultatIgraca2";
-            this.lblRezultatIgraca2.Size = new System.Drawing.Size(100, 89);
+            this.lblRezultatIgraca2.Size = new System.Drawing.Size(97, 104);
             this.lblRezultatIgraca2.TabIndex = 20;
             this.lblRezultatIgraca2.Text = "0";
             // 
             // frmGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::XO_Game_Project.Properties.Resources.gameBackground;
@@ -314,7 +314,7 @@
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
-            this.Font = new System.Drawing.Font("Orbitron", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmGame";
