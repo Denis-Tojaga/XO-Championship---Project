@@ -201,8 +201,10 @@
             // 
             // btnPokreniIgru
             // 
-            this.btnPokreniIgru.BackColor = System.Drawing.Color.White;
+            this.btnPokreniIgru.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnPokreniIgru.Cursor = System.Windows.Forms.Cursors.Cross;
             this.btnPokreniIgru.Font = new System.Drawing.Font("Orbitron", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPokreniIgru.ForeColor = System.Drawing.Color.White;
             this.btnPokreniIgru.Location = new System.Drawing.Point(449, 423);
             this.btnPokreniIgru.Name = "btnPokreniIgru";
             this.btnPokreniIgru.Size = new System.Drawing.Size(332, 49);
@@ -234,7 +236,7 @@
             this.Controls.Add(this.txtOsam3);
             this.Controls.Add(this.txtOsam4);
             this.Name = "frmRegistracija";
-            this.Text = "frmRegistracija";
+            this.Text = "Table of players";
             this.Load += new System.EventHandler(this.frmRegistracija_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

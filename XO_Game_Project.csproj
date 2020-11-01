@@ -64,6 +64,12 @@
     <Compile Include="frmStart.Designer.cs">
       <DependentUpon>frmStart.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmWinnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWinnerForm.Designer.cs">
+      <DependentUpon>frmWinnerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Igrac.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStart.resx">
       <DependentUpon>frmStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWinnerForm.resx">
+      <DependentUpon>frmWinnerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +111,8 @@
   <ItemGroup>
     <Content Include="formBackground.jpg" />
     <Content Include="gameBackground.jpg" />
+    <Content Include="Resources\WinnerForm.jpg" />
+    <None Include="Resources\WinnerForm1.jpg" />
     <None Include="Resources\gameBackground.jpg" />
     <None Include="Resources\formBackground.jpg" />
   </ItemGroup>

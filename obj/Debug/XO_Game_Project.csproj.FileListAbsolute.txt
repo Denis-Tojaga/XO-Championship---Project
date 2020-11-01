@@ -22,3 +22,16 @@ C:\Users\Jimmy\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.cspr
 C:\Users\Jimmy\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.csproj.CoreCompileInputs.cache
 C:\Users\Jimmy\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.exe
 C:\Users\Jimmy\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.pdb
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\bin\Debug\XO_Game_Project.exe.config
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\bin\Debug\XO_Game_Project.exe
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\bin\Debug\XO_Game_Project.pdb
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.csprojAssemblyReference.cache
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.frmGame.resources
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.frmRegistracija.resources
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.frmStart.resources
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.Properties.Resources.resources
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.csproj.GenerateResource.cache
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.csproj.CoreCompileInputs.cache
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.exe
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.pdb
+C:\Users\Denis\Documents\GitHub\XO-Game---Project\obj\Debug\XO_Game_Project.frmWinnerForm.resources

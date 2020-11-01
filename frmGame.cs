@@ -15,14 +15,14 @@ namespace XO_Game_Project
 {
     public partial class frmGame : Form
     {
-        bool krajIgre;
         int bestOF;
         public int BrojacPoteza { get; set; }
         public int RezultatIgraca1 { get; set; } = 0;
         public int RezultatIgraca2 { get; set; } = 0;
+        public int BrojPobjedaPrvog { get; set; } = 0;
+        public int BrojPobjedaDrugog { get; set; } = 0;
         public frmGame(int best)
         {
-            krajIgre = false;
             bestOF = best;
             InitializeComponent();
         }
@@ -30,6 +30,7 @@ namespace XO_Game_Project
         {
             lblPrviIgrac.Text = frmRegistracija.DvaIgraca[0].ImeIgraca;
             lblDrugiIgrac.Text = frmRegistracija.DvaIgraca[1].ImeIgraca;
+            
             // Edit kasnije, eror se javlja na vise od 2 igraca 0-0-0-0-0-0-0-0-0
             lblTrenutniPotez.Text = lblPrviIgrac.Text;
         }
@@ -40,7 +41,6 @@ namespace XO_Game_Project
                 button1.BackColor = Color.Red;
                 button2.BackColor = Color.Red;
                 button3.BackColor = Color.Red;
-                
                 return true;
             }
             return false;
@@ -51,17 +51,16 @@ namespace XO_Game_Project
                 return true;
             return false;
         }
-        // Mislim da ne treba ova funkcija
-        //private void UgasiDugmicAkoGotovo(Button dugmic)
-        //{
-        //    if (!ProvjeriTextButtona(dugmic) && ProvjeraPobjednika())
-        //        dugmic.Enabled = false;
-        //}
+        private void UgasiDugmicAkoGotovo(Button dugmic)
+        {
+            if (!ProvjeriTextButtona(dugmic))
+                dugmic.Enabled = false;
+        }
         private void PromijeniVrijednost(object kliknut)
         {
             int newButtonTextSize = 50;
             Button kliknutiDugmic = kliknut as Button;
-            if (string.IsNullOrEmpty(kliknutiDugmic.Text) && !krajIgre)
+            if (string.IsNullOrEmpty(kliknutiDugmic.Text))
             {
                 if (BrojacPoteza % 2 == 0)
                 {
@@ -101,7 +100,6 @@ namespace XO_Game_Project
             {
                 ZavrsiloNerijesenoPromijeniBoju();
                 lblPobjednik.Text = "Match ended with draw";
-                krajIgre = true;
                 btnNextRound.Show();
                 return true;
             }
@@ -110,15 +108,15 @@ namespace XO_Game_Project
         }
         private void UgasiDugmice()
         {
-            //UgasiDugmicAkoGotovo(btn1);
-            //UgasiDugmicAkoGotovo(btn2);
-            //UgasiDugmicAkoGotovo(btn3);
-            //UgasiDugmicAkoGotovo(btn4);
-            //UgasiDugmicAkoGotovo(btn5);
-            //UgasiDugmicAkoGotovo(btn6);
-            //UgasiDugmicAkoGotovo(btn7);
-            //UgasiDugmicAkoGotovo(btn8);
-            //UgasiDugmicAkoGotovo(btn9);
+            UgasiDugmicAkoGotovo(btn1);
+            UgasiDugmicAkoGotovo(btn2);
+            UgasiDugmicAkoGotovo(btn3);
+            UgasiDugmicAkoGotovo(btn4);
+            UgasiDugmicAkoGotovo(btn5);
+            UgasiDugmicAkoGotovo(btn6);
+            UgasiDugmicAkoGotovo(btn7);
+            UgasiDugmicAkoGotovo(btn8);
+            UgasiDugmicAkoGotovo(btn9);
         }
         private bool ProvjeriRedove()
         {
@@ -139,24 +137,34 @@ namespace XO_Game_Project
                 if (BrojacPoteza % 2 == 0)
                 {
                     lblPobjednik.Text = lblDrugiIgrac.Text + " WON !";
-                    int temp = int.Parse(lblRezultatIgraca2.Text) + 1;
-                    lblRezultatIgraca2.Text = (temp).ToString();
-                    lblCurrently.Text = "                       << Match ended >>";
-                    lblTrenutniPotez.Text = "";
+                    lblRezultatIgraca2.Text = (++BrojPobjedaDrugog).ToString();
+                    UgasiDugmice();
+                    lblTrenutniPotez.Hide();
+                    lblCurrently.Text="                                 >> Match ended <<";
                     btnNextRound.Show();
-
-                    krajIgre = true;
+                    if(BrojPobjedaDrugog==bestOF/2 + 1)
+                    {
+                        Hide();
+                        frmWinnerForm krajIgre = new frmWinnerForm(lblDrugiIgrac.Text);
+                        krajIgre.ShowDialog();
+                        Close();
+                    }
                 }
                 else
                 {
                     lblPobjednik.Text = lblPrviIgrac.Text + " WON !";
-                    int temp = int.Parse(lblRezultatIgraca1.Text) + 1;
-                    lblRezultatIgraca1.Text = (temp).ToString();
-                    lblCurrently.Text = "                       << Match ended >>";
-                    lblTrenutniPotez.Text = "";
+                    lblRezultatIgraca1.Text = (++BrojPobjedaPrvog).ToString();
+                    UgasiDugmice();
+                    lblCurrently.Text = "                                 >> Match ended <<";
+                    lblTrenutniPotez.Hide();
                     btnNextRound.Show();
-
-                    krajIgre = true;
+                    if (BrojPobjedaPrvog == bestOF / 2 + 1)
+                    {
+                        Hide();
+                        frmWinnerForm krajIgre = new frmWinnerForm(lblPrviIgrac.Text);
+                        krajIgre.ShowDialog();
+                        Close();
+                    }
                 }
                 return true;
             }
@@ -167,88 +175,88 @@ namespace XO_Game_Project
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
         }
         private void btn2_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
-
         }
         private void btn3_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
         private void btn4_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
         private void btn5_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
         private void btn6_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
         private void btn7_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
         private void btn8_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
         private void btn9_Click(object sender, EventArgs e)
         {
             PromijeniVrijednost(sender);
             ProvjeraPobjednika();
             ProvjeraNerijeseno();
-            UgasiDugmice();
-
         }
-
+        private void OslobodiDugmic(Button dugmic)
+        {
+            dugmic.Enabled = true;
+        }
         private void RestartIgru()
         {
             btn1.BackColor = btn2.BackColor = btn3.BackColor = btn4.BackColor = btn5.BackColor = btn6.BackColor = btn7.BackColor = btn8.BackColor = btn9.BackColor = Color.White;
             btn1.Text = btn2.Text = btn3.Text = btn4.Text = btn5.Text = btn6.Text = btn7.Text = btn8.Text = btn9.Text = "";
-            krajIgre = false;
+            lblCurrently.Text="";
+            if(BrojacPoteza%2==0)
+                lblTrenutniPotez.Text =lblPrviIgrac.Text;
+            else
+                lblTrenutniPotez.Text =lblDrugiIgrac.Text;
+            lblCurrently.Text = "Currently playing >> ";
+            lblTrenutniPotez.Show();
             btnNextRound.Hide();
-            //BrojacPoteza = 0;
-            //Brojac poteza odkomentarisati ako zelis da X igra uvijek prvi sto po meni nije fer.
-
+            OslobodiDugmic(btn1);
+            OslobodiDugmic(btn2);
+            OslobodiDugmic(btn3);
+            OslobodiDugmic(btn4);
+            OslobodiDugmic(btn5);
+            OslobodiDugmic(btn6);
+            OslobodiDugmic(btn7);
+            OslobodiDugmic(btn8);
+            OslobodiDugmic(btn9);
         }
         private void btnNextRound_Click(object sender, EventArgs e)
         {
             RestartIgru();
-
+        }
+        private void btnExitGame_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
