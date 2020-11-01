@@ -136,7 +136,7 @@ namespace XO_Game_Project
                 }
             }
             this.Hide();
-            frmGame igra = new frmGame();
+            frmGame igra = new frmGame(3);
             igra.ShowDialog();
             Close();
         }
