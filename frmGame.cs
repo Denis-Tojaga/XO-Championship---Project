@@ -21,16 +21,29 @@ namespace XO_Game_Project
         public int RezultatIgraca2 { get; set; } = 0;
         public int BrojPobjedaPrvog { get; set; } = 0;
         public int BrojPobjedaDrugog { get; set; } = 0;
-        public frmGame(int best)
+        public List<TextBox> nextBracket { get; set; }
+        public int brojacRudne { get; set; }
+        public frmGame()
         {
-            bestOF = best;
             InitializeComponent();
         }
+        public frmGame(string prvi,string drugi,int best,int brojac,List<TextBox>next):this()
+        {
+            brojacRudne = brojac;
+            nextBracket = next;
+            bestOF = best;
+            lblPrviIgrac.Text =prvi ;
+            lblDrugiIgrac.Text= drugi;
+        }
+        public frmGame(string prvi,string drugi,string finale):this(){
+            lblPrviIgrac.Text = prvi;
+            lblDrugiIgrac.Text = drugi;
+            
+            bestOF = 5;
+        }
+      
         private void frmGame_Load(object sender, EventArgs e)
         {
-            lblPrviIgrac.Text = frmRegistracija.DvaIgraca[0].ImeIgraca;
-            lblDrugiIgrac.Text = frmRegistracija.DvaIgraca[1].ImeIgraca;
-            
             // Edit kasnije, eror se javlja na vise od 2 igraca 0-0-0-0-0-0-0-0-0
             lblTrenutniPotez.Text = lblPrviIgrac.Text;
         }
@@ -144,10 +157,12 @@ namespace XO_Game_Project
                     btnNextRound.Show();
                     if(BrojPobjedaDrugog==bestOF/2 + 1)
                     {
+                        nextBracket[brojacRudne].Text = lblDrugiIgrac.Text;
+
                         Hide();
-                        frmWinnerForm krajIgre = new frmWinnerForm(lblDrugiIgrac.Text);
-                        krajIgre.ShowDialog();
-                        Close();
+                        //frmWinnerForm krajIgre = new frmWinnerForm(lblDrugiIgrac.Text);
+                        //krajIgre.ShowDialog();
+                        //Close();
                     }
                 }
                 else
@@ -160,10 +175,13 @@ namespace XO_Game_Project
                     btnNextRound.Show();
                     if (BrojPobjedaPrvog == bestOF / 2 + 1)
                     {
+                        
+                        nextBracket[brojacRudne].Text = lblPrviIgrac.Text;
+
                         Hide();
-                        frmWinnerForm krajIgre = new frmWinnerForm(lblPrviIgrac.Text);
-                        krajIgre.ShowDialog();
-                        Close();
+                        //frmWinnerForm krajIgre = new frmWinnerForm(lblPrviIgrac.Text);
+                        //krajIgre.ShowDialog();
+                        //Close();
                     }
                 }
                 return true;
