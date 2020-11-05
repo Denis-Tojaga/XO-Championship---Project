@@ -35,12 +35,6 @@ namespace XO_Game_Project
             lblPrviIgrac.Text =prvi ;
             lblDrugiIgrac.Text= drugi;
         }
-        public frmGame(string prvi,string drugi,string finale):this(){
-            lblPrviIgrac.Text = prvi;
-            lblDrugiIgrac.Text = drugi;
-            
-            bestOF = 5;
-        }
       
         private void frmGame_Load(object sender, EventArgs e)
         {
