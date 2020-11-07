@@ -44,7 +44,6 @@ namespace XO_Game_Project
       
         private void frmGame_Load(object sender, EventArgs e)
         {
-            // Edit kasnije, eror se javlja na vise od 2 igraca 0-0-0-0-0-0-0-0-0
             lblTrenutniPotez.Text = lblPrviIgrac.Text;
         }
         private bool ProvjeriDugmice(Button button1, Button button2, Button button3)
