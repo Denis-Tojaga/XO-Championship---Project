@@ -16,6 +16,7 @@ namespace XO_Game_Project
         static public List<TextBox> CetiriIgracaImena { get; set; } = new List<TextBox>();
         static public List<TextBox> DvaIgracaImena { get; set; } = new List<TextBox>();
         static public List<TextBox> Final { get; set; } = new List<TextBox>();
+        static public List<TextBox> Pobjednik { get; set; } = new List<TextBox>();
         static public List<Igrac> OsamIgraca { get; set; } = new List<Igrac>();
         static public List<Igrac> CetiriIgraca { get; set; } = new List<Igrac>();
         static public List<Igrac> DvaIgraca { get; set; } = new List<Igrac>();
@@ -123,8 +124,22 @@ namespace XO_Game_Project
                 string prvi = CetiriIgracaImena[brojacRundi * 2].Text;
                 string drugi = CetiriIgracaImena[brojacRundi * 2 + 1].Text;
                 frmGame igra = new frmGame(prvi, drugi,5,brojacRundi,Final);
+                igra.ShowDialog();
+                brojacRundi++;
+                if(brojacRundi==1)
+                {
+                    brojacRundi = 0;
+                    dioBracketa = "kraj";
+                }
             }
-          
+            //if (dioBracketa == "kraj" && brojacRundi == 0)
+            //{
+            //    string prvi = DvaIgracaImena[brojacRundi * 2].Text;
+            //    string drugi = DvaIgracaImena[brojacRundi * 2 + 1].Text;
+            //    frmGame finale = new frmGame(prvi, drugi, 5, brojacRundi, Pobjednik);
+            //    finale.ShowDialog();
+            //}
+
         }
 
         private void frmRegistracija_KeyDown(object sender, KeyEventArgs e)
@@ -142,6 +157,7 @@ namespace XO_Game_Project
             if (brojIgracaTurnir == 8 && ProvjeriInputIgraca(txtOsam1.Text) && ProvjeriInputIgraca(txtOsam2.Text) && ProvjeriInputIgraca(txtOsam3.Text) && ProvjeriInputIgraca(txtOsam4.Text) && ProvjeriInputIgraca(txtOsam5.Text) && ProvjeriInputIgraca(txtOsam6.Text) && ProvjeriInputIgraca(txtOsam7.Text) && ProvjeriInputIgraca(txtOsam8.Text))
             {
                 OnemoguciUlaze(OsamIgracaImena);
+                txtChampion.Enabled = false;
                 btnLock.Hide();
                 btnPokreniIgru.Show();
                 OsamIgraca.Add(new Igrac(txtOsam1.Text));
@@ -158,6 +174,7 @@ namespace XO_Game_Project
             {
                 OnemoguciUlaze(CetiriIgracaImena);
                 SakrijUlaze(OsamIgracaImena);
+                txtChampion.Enabled = false;
                 btnLock.Hide();
                 btnPokreniIgru.Show();
                 CetiriIgraca.Add(new Igrac(txtCetiri1.Text));
@@ -171,6 +188,7 @@ namespace XO_Game_Project
                 OnemoguciUlaze(DvaIgracaImena);
                 SakrijUlaze(OsamIgracaImena);
                 SakrijUlaze(CetiriIgracaImena);
+                txtChampion.Enabled = false;
                 btnLock.Hide();
                 btnPokreniIgru.Show();
                 DvaIgraca.Add(new Igrac(txtDva1.Text));
