@@ -138,11 +138,12 @@ namespace XO_Game_Project
                 if(!string.IsNullOrEmpty(txtChampion.Text))
                     Close();
             }
+
         }
 
         private void frmRegistracija_KeyDown(object sender, KeyEventArgs e)
         {
-          
+
         }
 
         private void SakrijUlaze(List<TextBox> ulazi)
