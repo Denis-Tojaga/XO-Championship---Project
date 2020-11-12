@@ -121,8 +121,8 @@ namespace XO_Game_Project
             }
             if (dioBracketa == "final")
             {
-                string prvi = CetiriIgracaImena[brojacRundi * 2].Text;
-                string drugi = CetiriIgracaImena[brojacRundi * 2 + 1].Text;
+                string prvi = DvaIgracaImena[brojacRundi * 2].Text;
+                string drugi = DvaIgracaImena[brojacRundi * 2 + 1].Text;
                 frmGame igra = new frmGame(prvi, drugi,5,brojacRundi,Final);
                 igra.ShowDialog();
                 brojacRundi++;
@@ -132,13 +132,13 @@ namespace XO_Game_Project
                     dioBracketa = "kraj";
                 }
             }
-            //if (dioBracketa == "kraj" && brojacRundi == 0)
-            //{
-            //    string prvi = DvaIgracaImena[brojacRundi * 2].Text;
-            //    string drugi = DvaIgracaImena[brojacRundi * 2 + 1].Text;
-            //    frmGame finale = new frmGame(prvi, drugi, 5, brojacRundi, Pobjednik);
-            //    finale.ShowDialog();
-            //}
+            if(dioBracketa=="kraj")
+            {
+                frmWinnerForm theEnd = new frmWinnerForm(txtChampion.Text);
+                theEnd.ShowDialog();
+                if(!string.IsNullOrEmpty(txtChampion.Text))
+                    Close();
+            }
 
         }
 
