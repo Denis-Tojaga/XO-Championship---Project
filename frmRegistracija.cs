@@ -16,7 +16,6 @@ namespace XO_Game_Project
         static public List<TextBox> CetiriIgracaImena { get; set; } = new List<TextBox>();
         static public List<TextBox> DvaIgracaImena { get; set; } = new List<TextBox>();
         static public List<TextBox> Final { get; set; } = new List<TextBox>();
-        static public List<TextBox> Pobjednik { get; set; } = new List<TextBox>();
         static public List<Igrac> OsamIgraca { get; set; } = new List<Igrac>();
         static public List<Igrac> CetiriIgraca { get; set; } = new List<Igrac>();
         static public List<Igrac> DvaIgraca { get; set; } = new List<Igrac>();
@@ -49,6 +48,7 @@ namespace XO_Game_Project
         public frmRegistracija(int brojIgraca): this()
         {
             btnPokreniIgru.Hide();
+            txtChampion.Enabled = false;
             brojIgracaTurnir = brojIgraca;
             if (brojIgraca == 8)
             {
@@ -93,8 +93,8 @@ namespace XO_Game_Project
             if(dioBracketa=="quater" && brojacRundi <= 3)
             {
                 string prvi;
-                prvi= OsamIgracaImena[brojacRundi*2].Text;
                 string drugi;
+                prvi= OsamIgracaImena[brojacRundi*2].Text;
                 drugi=OsamIgracaImena[brojacRundi*2+1].Text;
                 frmGame igra = new frmGame(prvi,drugi, 3,brojacRundi,CetiriIgracaImena);
                 igra.ShowDialog();
@@ -104,7 +104,6 @@ namespace XO_Game_Project
                     brojacRundi = 0;
                     dioBracketa = "semi";
                 }
-
             }
             if (dioBracketa=="semi" && brojacRundi <= 1)
             {
@@ -121,8 +120,8 @@ namespace XO_Game_Project
             }
             if (dioBracketa == "final")
             {
-                string prvi = CetiriIgracaImena[brojacRundi * 2].Text;
-                string drugi = CetiriIgracaImena[brojacRundi * 2 + 1].Text;
+                string prvi = DvaIgracaImena[brojacRundi * 2].Text;
+                string drugi = DvaIgracaImena[brojacRundi * 2 + 1].Text;
                 frmGame igra = new frmGame(prvi, drugi,5,brojacRundi,Final);
                 igra.ShowDialog();
                 brojacRundi++;
@@ -132,14 +131,13 @@ namespace XO_Game_Project
                     dioBracketa = "kraj";
                 }
             }
-            //if (dioBracketa == "kraj" && brojacRundi == 0)
-            //{
-            //    string prvi = DvaIgracaImena[brojacRundi * 2].Text;
-            //    string drugi = DvaIgracaImena[brojacRundi * 2 + 1].Text;
-            //    frmGame finale = new frmGame(prvi, drugi, 5, brojacRundi, Pobjednik);
-            //    finale.ShowDialog();
-            //}
-
+            if(dioBracketa=="kraj")
+            {
+                frmWinnerForm theEnd = new frmWinnerForm(txtChampion.Text);
+                theEnd.ShowDialog();
+                if(!string.IsNullOrEmpty(txtChampion.Text))
+                    Close();
+            }
         }
 
         private void frmRegistracija_KeyDown(object sender, KeyEventArgs e)
