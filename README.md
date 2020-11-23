@@ -6,7 +6,8 @@ Second one lets you to write in the names of the number of players that you pick
 if you picked to have quarter finals, 4 for semi finals, and in the end two best players play.After that when you hit start game,
 it opens the new form which is actually holding a game board and result section.In that board you have button next round which restarts 
 the board and lets you play again until you reach 2 victories, which lead you in the next part of championship.
-When the game ends it will open up the last form which says Congratulations to the winner.
+When the game ends it will open up the tournament result so you can see current winner,when the last two players play it will open the last 
+form which says Congratulations to the winner.
 
 -=-=-=-=-=-=-=
 
