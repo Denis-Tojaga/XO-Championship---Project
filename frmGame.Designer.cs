@@ -222,7 +222,7 @@
             // 
             this.lblPobjednik.AutoSize = true;
             this.lblPobjednik.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPobjednik.Location = new System.Drawing.Point(544, 12);
+            this.lblPobjednik.Location = new System.Drawing.Point(540, 12);
             this.lblPobjednik.Name = "lblPobjednik";
             this.lblPobjednik.Size = new System.Drawing.Size(0, 22);
             this.lblPobjednik.TabIndex = 18;
@@ -289,13 +289,14 @@
             // 
             // btnNextRound
             // 
-            this.btnNextRound.BackColor = System.Drawing.Color.Lime;
+            this.btnNextRound.BackColor = System.Drawing.Color.Indigo;
             this.btnNextRound.FlatAppearance.BorderSize = 0;
             this.btnNextRound.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNextRound.Font = new System.Drawing.Font("Orbitron", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextRound.Location = new System.Drawing.Point(777, 30);
+            this.btnNextRound.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnNextRound.Location = new System.Drawing.Point(756, 21);
             this.btnNextRound.Name = "btnNextRound";
-            this.btnNextRound.Size = new System.Drawing.Size(162, 69);
+            this.btnNextRound.Size = new System.Drawing.Size(198, 46);
             this.btnNextRound.TabIndex = 9;
             this.btnNextRound.Text = "NEXT ROUND >>";
             this.btnNextRound.UseVisualStyleBackColor = false;

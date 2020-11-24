@@ -31,7 +31,7 @@ namespace XO_Game_Project
         {
             if(lbl2Igraca.BackColor!=Color.Red && lbl4Igraca.BackColor != Color.Red && lbl8Igraca.BackColor != Color.Red)
             {
-                MessageBox.Show("Please select how many players You want!");
+                MessageBox.Show("Please select how many players You want in this tournament!");
                 return;
             }
             Hide();
