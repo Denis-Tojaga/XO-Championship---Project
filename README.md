@@ -15,6 +15,12 @@ Main form lets you pick how many players can attent the tournament ( 2 4 8 selec
 Second one lets you to write in the names of the number of players that you picked previously,it lets you name 8 players
 if you picked to have quarter finals, 4 for semi finals, and in the end two best players play.
 <br><br>
+![](AppImages/slika2.png)
+<br><br>
+![](AppImages/slika3.png)
+<br><br>
+
+
 
 
 ### Game 
