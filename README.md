@@ -27,6 +27,11 @@ if you picked to have quarter finals, 4 for semi finals, and in the end two best
 After that when you hit start game,it opens the new form which is actually holding a game board and result section.
 In that board you have button next round which restarts the board and lets you play again until you reach 2 victories, which lead you in the next part of championship.
 <br><br>
+![](AppImages/slika4.png)
+<br><br>
+![](AppImages/slika5.png)
+<br><br>
+
 
 
 ### Winner
