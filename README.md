@@ -5,6 +5,8 @@ XO Championship made with cSharp programming language, it has 4 forms that have 
 ### Main form
 Main form lets you pick how many players can attent the tournament ( 2 4 8 selection ), when you hit start it opens up a new form.
 <br><br>
+![](AppImages/slika1.png)
+<br><br>
 
 
 
