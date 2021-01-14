@@ -38,5 +38,7 @@ In that board you have button next round which restarts the board and lets you p
 When the game ends it will open up the tournament result so you can see current winner,when the last two players play it will open the last 
 form which says Congratulations to the winner.
 <br><br>
+![](AppImages/slika6.png)
+<br><br>
 
 
